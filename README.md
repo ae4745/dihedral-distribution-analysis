@@ -23,7 +23,7 @@ Comparing their distributions between two simulation conditions (e.g. wild-type 
 
 ### Why use distributions and not just means?
 
-Side-chain dihedrals are angular and multimodal (rotamer wells at roughly −60°, 60°, 180°). Comparing means is therefore misleading. This pipeline compares the full probability distributions using three metrics that are sensitive to different aspects of distributional change.
+Side-chain dihedrals are angular and multimodal (rotamer wells at roughly −60°, 60°, 180°). Comparing means is therefore misleading. This pipeline compares the full probability distributions using three metrics (TVD, Jensen-Shannon, Wasserstein) that are sensitive to different aspects of distributional change.
 
 ---
 
