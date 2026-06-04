@@ -158,12 +158,7 @@ Human-readable labels for the two conditions. Used in plot legends and the summa
 ```python
 SEGID_OF_INTEREST = "P0"
 ```
-The segment / chain identifier for the protein of interest in your topology. If you are unsure, inspect your structure with:
-```python
-import MDAnalysis as mda
-u = mda.Universe("your_structure.pdb")
-print({seg.segid for seg in u.segments})
-```
+The segment / chain identifier for the protein of interest in your topology.
 
 ### `RUN_EXTRACTION` / `RUN_ANALYSIS`
 ```python
