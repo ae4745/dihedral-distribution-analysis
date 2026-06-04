@@ -49,8 +49,8 @@ Side-chain dihedrals are angular and multimodal (rotamer wells at roughly âˆ’60Â
 
 ## Dependencies
 
-| Package | Minimum version | Purpose |
-|---------|----------------|---------|
+| Package | Minimum version |
+|---------|----------------|
 | MDAnalysis | 2.0 |
 | NumPy | 1.21 |
 | pandas | 1.3 |
