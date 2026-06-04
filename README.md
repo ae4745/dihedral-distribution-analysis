@@ -51,12 +51,12 @@ Side-chain dihedrals are angular and multimodal (rotamer wells at roughly âˆ’60Â
 
 | Package | Minimum version | Purpose |
 |---------|----------------|---------|
-| MDAnalysis | 2.0 | Trajectory parsing & dihedral calculation |
-| NumPy | 1.21 | Numerical arrays |
-| pandas | 1.3 | CSV I/O and summary table |
-| matplotlib | 3.4 | Plotting |
-| SciPy | 1.7 | Distance metrics (TVD, JSD, Wasserstein) |
-| tqdm | 4.62 | Progress bars |
+| MDAnalysis | 2.0 |
+| NumPy | 1.21 |
+| pandas | 1.3 |
+| matplotlib | 3.4 | 
+| SciPy | 1.7 | 
+| tqdm | 4.62 |
 
 ---
 
