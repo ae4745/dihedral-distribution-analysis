@@ -3,9 +3,9 @@
 A Python pipeline for comparing side-chain dihedral angle distributions (χ1 / χ2) across molecular dynamics simulation ensembles.
 
 Given two sets of simulation repeats, the pipeline:
-1. **Extracts** per-residue dihedral angles from MD trajectories (via MDAnalysis)
-2. **Computes** histograms across repeats and compares them using three complementary statistical distance metrics
-3. **Generates** per-residue comparison plots and a ranked summary CSV
+1. Extracts per-residue dihedral angles from MD trajectories (via MDAnalysis)
+2. Computes histograms across repeats and compares them using three complementary statistical distance metrics
+3. Generates per-residue comparison plots and a ranked summary CSV
 
 
 # Background
@@ -16,8 +16,8 @@ Given two sets of simulation repeats, the pipeline:
 
 | Angle | Atoms | Measures |
 |-------|-------|----------|
-| **χ1** | N – CA – CB – Xγ | Rotation about the CA–CB bond |
-| **χ2** | CA – CB – CG – Xδ | Rotation about the CB–CG bond |
+| χ1 | N – CA – CB – Xγ | Rotation about the CA–CB bond |
+| χ2 | CA – CB – CG – Xδ | Rotation about the CB–CG bond |
 
 Comparing their distributions between two simulation conditions (e.g. wild-type vs mutant, ligand-bound vs apo) reveals conformational changes at single-residue resolution, without reducing the data to a single rotamer label.
 
@@ -72,7 +72,7 @@ cd dihedral-distribution-analysis
 ### 2. Create and activate a conda environment (recommended)
 
 ```bash
-conda create -n dihedrals python=3.10
+conda create -n dihedrals
 conda activate dihedrals
 ```
 
@@ -91,7 +91,7 @@ pip install -r requirements.txt
    - Set `DIHEDRAL_LABEL` to `"chi1"` or `"chi2"`
    - Set `SIMULATION_1_LABEL` and `SIMULATION_2_LABEL` to descriptive names
    - Set `SEGID_OF_INTEREST` to your chain identifier (e.g. `"P0"`, `"A"`)
-     # Important! if you prefer a chain ID instead, you should replace "segid" with "chainid" in all .py files
+      **Important! if you prefer a chain ID instead, you should replace "segid" with "chainid" in all .py files**
    - Populate `SIMULATIONS` with your trajectory and topology paths
 
 2. Run the pipeline:
